@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sqaures</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <style>
+        
+        h1{
+            display: flex;
+            justify-content: center;
+        }
+        
+        
+        .box{
+            height: 200px;
+            width: 200px;
+            /* background-color:blue ; */
+            border: 2px solid black;
+            border-radius: 10px;
+        }
+        
+            
+
+
+        .container{
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+    </style>
+            
+
+            
+            
+
+
+</head>
+<body>
+    <h1>Welcome </h1>
+    <div class="container">
+        {% for i in range(0,num) %}
+        <div class="box" style="background-color:{{color}};"></div>
+        {% endfor %}
+
+    </div>
+    
+
+</body>
+</html>
